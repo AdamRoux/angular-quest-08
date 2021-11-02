@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quest8';
+
+  onomatopoeias : string[] | undefined = []
+  onReceiveNewOnomatopia($event: any){
+    this.onomatopoeias?.push($event)
+  }
 }
